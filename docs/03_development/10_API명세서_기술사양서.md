@@ -1,5 +1,5 @@
 # API 명세서 + 기술 사양서 — 베니와 함께
-> 소울나루(SOUL NARU) | 버전 1.0 | 작성일: 2026-04-02
+> 소울나루(SOUL NARU) | 버전 1.1 | 작성일: 2026-04-02 | 수정일: 2026-04-02
 
 ---
 
@@ -187,7 +187,9 @@ X-Platform: android | ios
 
 ### 3.1 VARCO 3D (에셋 생성)
 ```
-Endpoint: https://api.ncai.naver.com/varco/3d/generate
+⚠️ 주의: 아래 엔드포인트는 파트너 계약 후 발급되는 실제 URL로 반드시 교체 필요
+참고: https://varco.ai — 파트너십 신청 후 API 키 및 엔드포인트 확인
+Endpoint(임시): https://api.ncai.naver.com/varco/3d/generate  ← 4월 2주차 실제 확인 필수
 Method: POST
 Authorization: Bearer {VARCO_API_KEY}
 ```
@@ -245,6 +247,28 @@ Authorization: Bearer {VARCO_API_KEY}
 [서버] 구독 활성화 + Response
   Body: { "success": true, "subscription": { "type": "premium", "expires_at": "..." } }
 ```
+
+### 4.3 구독 취소 웹훅 처리
+```
+[스토어] 유저가 구독 취소 → Google Play / App Store 웹훅 발송
+    ↓
+POST /payments/subscription/cancel-webhook
+Headers: { "X-Signature": "..." }  ← 스토어별 서명 검증 필수
+Body (Google Play):
+{
+  "subscriptionNotification": {
+    "notificationType": 3,  // 3 = SUBSCRIPTION_CANCELED
+    "purchaseToken": "...",
+    "subscriptionId": "com.soulnaru.premium.monthly"
+  }
+}
+    ↓
+[서버] 구독 상태 expired로 업데이트 → 구독 혜택 만료 처리
+```
+
+**스토어별 웹훅 설정**:
+- Google Play: Cloud Pub/Sub 토픽 구독 설정
+- App Store: App Store Server Notifications V2 엔드포인트 등록
 
 ---
 
