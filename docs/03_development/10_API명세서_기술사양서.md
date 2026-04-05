@@ -310,4 +310,4 @@ hotfix/xxx    ← 긴급 수정 (main에서 분기)
 | Release | main | Production | 앱스토어 |
 
 ---
-*문서 버전: v1.0 | 작성: AI PM Alex | 검토: 개발팀*
+*문서 버전: v1.2 | 작성: AI PM Alex | 검토: 개발팀*

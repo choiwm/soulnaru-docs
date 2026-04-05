@@ -240,4 +240,4 @@ BennyState   ←→  BennyPresenter    ←→  BennyView
 ```
 
 ---
-*문서 버전: v1.0 | 작성: AI PM Alex | 검토: 개발팀*
+*문서 버전: v1.1 | 작성: AI PM Alex | 검토: 개발팀*

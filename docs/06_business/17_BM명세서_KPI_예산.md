@@ -142,4 +142,4 @@ album_viewed               {}
 3. **3차**: VARCO 크레딧 사용 최소화 (직접 제작 에셋 비율 확대)
 
 ---
-*문서 버전: v1.0 | 작성: AI PM Alex | 검토: wonman님*
+*문서 버전: v1.3 | 작성: AI PM Alex | 검토: wonman님*
