@@ -41,9 +41,34 @@
 
 ---
 
+## 🖼️ 에셋 갤러리 & 프로젝트 문서 포털
+
+> **웹 문서 포털** (이미지 갤러리 포함): [https://lrndxihi.gensparkclaw.com/benny/](https://lrndxihi.gensparkclaw.com/benny/)
+
+포털에서 아래 내용을 바로 확인할 수 있습니다:
+- **BreathingGuide UI** 시안 5종 (390×844px)
+- **Check-In UI** 시안 8종 (5감정×5강도)
+- **텍스처** Albedo/Normal/Emission × 3단계 + 계절 4종 (13개)
+- **감정 스프라이트** 75개 — 3~5단계, 5감정×5강도 (256×256px)
+
+### 🎨 아트 에셋 산출물 (4/16 완료)
+
+| 유형 | 파일 수 | 경로 |
+|------|---------|------|
+| 감정 스프라이트 | 75개 PNG (256×256) | `docs/04_art/assets/sprites/stage{3,4,5}/` |
+| 텍스처 | 13개 PNG (512×512 / 256×256) | `docs/04_art/assets/textures/` |
+| UI 시안 | 26개 PNG (390×844 + @2x) | `docs/04_art/assets/ui/` |
+
+---
+
 ## 📅 최근 업데이트
 
 [CHANGELOG.md](CHANGELOG.md) 참고
+
+**2026-04-16** — 아트 산출물 전 항목 완료 확정 (Sprint 2 블로킹 전부 해소)
+- 스펙 문서 37~41번 추가 (v1.1 — 이미지 갤러리 포함)
+- 스프라이트 75개 · 텍스처 13개 · UI 시안 26개 GitHub 업로드
+- 33번 완료현황보고 v2.0 발행
 
 ---
 
