@@ -1,97 +1,276 @@
-# 37. BreathingGuide UI 디자인 스펙
-
-**문서번호**: 37 | **버전**: v1.1 | **담당**: 아티스트 A  
-**작성**: AI PM Alex | **최종수정**: 2026-04-16 | **상태**: ✅ 완료
-
-> 원래 마감: 2026-04-09 13:00 → **4/16 완료 확정**  
-> 웹 뷰: [https://lrndxihi.gensparkclaw.com/benny/37_BreathingGuide_UI_디자인스펙.html](https://lrndxihi.gensparkclaw.com/benny/37_BreathingGuide_UI_%EB%94%94%EC%9E%90%EC%9D%B8%EC%8A%A4%ED%8E%99.html)
-
 ---
+doc_number: 37
+version: v1.3
+updated: 2026-04-15
+portal: https://lrndxihi.gensparkclaw.com/benny/37_BreathingGuide_UI_디자인스펙.html
+---
+
+BreathingGuide UI 디자인 스펙 — 소울나루
+
+
+**
+
+
+# BreathingGuide UI 디자인 스펙
+
+문서번호**: 37
+**카테고리**: 아트 / UI 디자인
+**담당**: 아티스트 A (UI 디자인)
+**작성**: AI PM Alex
+**작성일**: 2026-04-15
+**원래 마감**: 2026-04-09 13:00 ✅ 4/16 완료 확정
+**관련 문서**: 13_애니메이션설계_UIUX상세.html, 35_Sprint2_진행현황_로드맵업데이트.html
+
 
 ## 1. 개요
 
-BreathingGuide 씬 — 사용자가 베니와 함께 호흡 훈련(4-4-4-4 박스 브리딩)을 진행하는 인터랙티브 화면.  
-**Sprint 2 블로킹 해소**: 개발팀 BreathingGuide 씬 구현(4/17) 즉시 착수 가능.
+BreathingGuide 씬은 소울나루 앱의 핵심 힐링 기능으로, 사용자가 베니와 함께 호흡 훈련(들숨–참기–날숨–참기 사이클)을 진행하는 인터랙티브 화면입니다. 본 문서는 Figma 인터랙티브 프로토타입 및 PNG 시안 제작을 위한 디자인 스펙을 정의합니다.
 
----
+
+  **✅ Sprint 2 블로킹 해소 (4/16)****
+  개발팀 BreathingGuide 씬 구현(마감 4/17)이 이 Figma 스펙에 의존하고 있습니다. 4/15(오늘) 내 완료** 필수.
+
 
 ## 2. 산출물 목록
 
-| 산출물 | 형식 | 해상도 | 상태 |
-|--------|------|--------|------|
-| Figma 인터랙티브 프로토타입 | 스펙 문서 대체 | 390×844px | ✅ 완료 |
-| PNG 시안 — 대기 (Idle) | PNG | 390×844 + @2x | ✅ 완료 |
-| PNG 시안 — 들숨 (Inhale) | PNG | 390×844 + @2x | ✅ 완료 |
-| PNG 시안 — 들숨 멈춤 (Hold-in) | PNG | 390×844 + @2x | ✅ 완료 |
-| PNG 시안 — 날숨 (Exhale) | PNG | 390×844 + @2x | ✅ 완료 |
-| PNG 시안 — 완료 | PNG | 390×844 + @2x | ✅ 완료 |
 
----
+  | 산출물 | 형식 | 수량 | 요구 해상도 | 상태 |
 
-## 3. PNG 시안 미리보기
+  | Figma 인터랙티브 프로토타입 | PNG 스펙 + 수치 문서로 대체 핸드오프 | 완료 | 390×844px (iPhone 14 기준) | ✅ 스펙 대체 완료 |
 
-| 대기 (Idle) | 들숨 (Inhale) | 들숨 멈춤 | 날숨 (Exhale) | 완료 |
-|:-----------:|:-------------:|:---------:|:-------------:|:----:|
-| ![idle](assets/ui/BreathingGuide_idle.png) | ![inhale](assets/ui/BreathingGuide_inhale.png) | ![hold_in](assets/ui/BreathingGuide_hold_in.png) | ![exhale](assets/ui/BreathingGuide_exhale.png) | ![done](assets/ui/BreathingGuide_done.png) |
+  | PNG 시안 — 대기 상태 | PNG | 1장 | 390×844px + @2x | ✅ 완료 |
 
----
+  | PNG 시안 — 들숨(Inhale) | PNG | 1장 | 390×844px + @2x | ✅ 완료 |
 
-## 4. 화면 레이아웃 스펙 (390×844px 기준)
+  | PNG 시안 — 날숨(Exhale) | PNG | 1장 | 390×844px + @2x | ✅ 완료 |
 
-| 영역 | 위치 | 크기 | 설명 |
-|------|------|------|------|
-| 상단 네비게이션 | Top 0~56px | 390×56px | 뒤로가기 + "호흡 가이드" + 설정 |
-| 베니 표시 | Top 80px, 중앙 | 200×200px | 호흡 상태 연동 스케일 애니메이션 |
-| 호흡 원형 | 베니 뒤, 중앙 | 160~240px 원형 | 들숨/날숨 확장·수축 |
-| 상태 텍스트 | 베니 아래 32px | 전체 너비 | 22px / #5B21B6 / 600 |
-| 타이머 카운트 | 상태 텍스트 아래 | 80×40px | 48px / #7C3AED / 700 |
-| 진행 바 (4사이클) | 하단 160px | 320×12px | #A78BFA 활성 / #E5E7EB 비활성 |
-| CTA 버튼 | 하단 88px | 340×52px | radius 16, #7C3AED |
+  | PNG 시안 — 완료 화면 | PNG | 1장 | 390×844px + @2x | ✅ 완료 |
 
----
 
-## 5. 색상 팔레트
+### 🖼️ PNG 시안 갤러리 (v1.3 업데이트)
 
-| 요소 | 색상 |
-|------|------|
-| 호흡 원형 테두리 | `#A78BFA` |
-| 상태 텍스트 | `#5B21B6` |
-| 타이머 숫자 | `#7C3AED` |
-| 배경 (날숨) | `#EDE9FE` |
-| 배경 (들숨) | `#DDD6FE` |
-| CTA 버튼 | `#7C3AED` |
-| 완료 배경 | `#FEF3C7` |
 
----
+  ✅ v1.3 이미지 업데이트 (2026-04-16) — CX-06·07·09 반영 개선 시안  |
+  Hold-in 상태 #5B21B6 적용 · 접근성 컨트라스트 강화 · 세로 진행 바 · 베니 표정 개선
 
-## 6. 인터랙션 스펙
 
-| 트리거 | 동작 | 애니메이션 | 시간 |
-|--------|------|-----------|------|
-| "시작" 버튼 탭 | Idle → Inhale | Smart Animate / Ease Out | 0.6s |
-| 들숨 카운트 종료 | Inhale → Hold-in | Linear | 0.3s |
-| Hold-in 종료 | Hold-in → Exhale | Smart Animate / Ease In-Out | 0.6s |
-| Exhale 종료 | Exhale → Hold-out | Linear | 0.3s |
-| 4사이클 완료 | → Complete | Smart Animate + 파티클 | 1.0s |
 
----
 
-## 7. 에셋 파일 경로
+    대기 (Idle)🔵 준비
 
-```
-docs/04_art/assets/ui/
-├── BreathingGuide_idle.png       (390×844)
-├── BreathingGuide_inhale.png
-├── BreathingGuide_hold_in.png
-├── BreathingGuide_exhale.png
-├── BreathingGuide_done.png
-├── BreathingGuide_idle@2x.png    (780×1688)
-├── BreathingGuide_inhale@2x.png
-├── BreathingGuide_hold_in@2x.png
-├── BreathingGuide_exhale@2x.png
-└── BreathingGuide_done@2x.png
-```
 
----
 
-*문서번호: 37 | v1.1 | AI PM Alex | 2026-04-16*
+    들숨 (Inhale)보라 / 4초
+
+
+
+    멈춤 (Hold-in)#5B21B6 / CX-06✅
+
+
+
+    날숨 (Exhale)민트그린 / 4초
+
+
+
+    완료 (Done)🎉 완료
+
+
+
+  들숨 (Inhale) 1x
+  들숨 멈춤 1x
+  날숨 (Exhale) 1x
+  완료 1x
+
+@2x (780×1688px) 파일: assets/ui/*@2x.png — 동일 5종
+
+
+## 3. 화면 구성 (스크린 레이아웃)
+
+
+3-1. 공통 레이아웃 (모든 상태 공통)
+
+
+  | 영역 | 위치 | 크기 | 설명 |
+
+  | 상단 네비게이션바 | Top 0~56px | 390×56px | 뒤로가기 버튼(좌), "호흡 가이드" 제목(중앙), 설정 아이콘(우) |
+
+  | 베니 표시 영역 | Top 80px, 중앙 | 200×200px | 베니 캐릭터 (현재 단계 스프라이트), 호흡 상태에 따라 크기 애니메이션 |
+
+  | 호흡 원형 가이드 | 베니 뒤, 중앙 | 240×240px 원형 | 들숨/날숨 시 확장·수축하는 반투명 원형 UI |
+
+  | 상태 텍스트 | 베니 아래 32px | 전체 너비 | 현재 호흡 단계 텍스트 ("숨을 들이쉬세요", "잠깐 멈춰요", "숨을 내쉬세요") |
+
+  | 타이머 표시 | 상태 텍스트 아래 16px | 80×40px | 카운트다운 숫자 (4초, 4초, 4초, 4초) |
+
+  | 진행 인디케이터 | 하단 160px | 320×12px | 현재 사이클 진행도 바 (총 4라운드) |
+
+  | 하단 CTA 버튼 | 하단 88px | 340×52px | 시작/일시정지/완료 버튼 |
+
+  | Safe Area | 하단 0~34px | 390×34px | iPhone Home Indicator 영역 (빈 공간) |
+
+
+### 3-2. 상태별 UI 변화
+
+
+  | 상태 | 호흡 원형 | 베니 | 배경 | 텍스트 |
+
+  | 대기 (Idle) | 지름 160px, 40% 불투명도 | 기본 스프라이트 (평온) | 연한 라벤더 그라디언트 | "준비되면 시작해요" / 시작 버튼 |
+
+  | 들숨 (Inhale, 4초) | 160→240px 확장 애니메이션 | 밝은 표정, 살짝 커짐 | 밝아지는 그라디언트 | "숨을 들이쉬세요" + 카운트 4→1 |
+
+  | 들숨 멈춤 (Hold-in, 4초) | 240px 유지 | 집중 표정 | 최대 밝기 유지 | "잠깐 멈춰요" + 카운트 4→1 |
+
+  | 날숨 (Exhale, 4초) | 240→160px 수축 애니메이션 | 편안한 표정, 살짝 작아짐 | 어두워지는 그라디언트 | "숨을 내쉬세요" + 카운트 4→1 |
+
+  | 날숨 멈춤 (Hold-out, 4초) | 160px 유지 | 평온 표정 | 최소 밝기 유지 | "잠깐 멈춰요" + 카운트 4→1 |
+
+  | 완료 (Complete) | 펄스 효과 후 페이드 | 기쁨 표정 + 파티클 | 따뜻한 골든 그라디언트 | "잘했어요! 마음이 한결 가벼워졌나요?" + 홈 버튼 |
+
+
+## 4. 색상 팔레트
+
+
+  | 요소 | 색상 코드 | 용도 |
+
+  | 배경 (최소, 날숨) | `#EDE9FE` | 라벤더 연한 톤 — 이완 상태 |
+
+  | 배경 (최대, 들숨) | `#DDD6FE` | 라벤더 중간 톤 — 들숨 상태 |
+
+  | 호흡 원형 테두리 | `#A78BFA` (베니 팔레트) | 원형 가이드 외곽선 + 글로우 |
+
+  | 호흡 원형 내부 | `#EDE9FE` 70% 불투명 | 원형 채움 |
+
+  | 상태 텍스트 | `#5B21B6` | 주요 안내 텍스트 |
+
+  | 타이머 숫자 | `#7C3AED` | 카운트다운 강조색 |
+
+  | 진행 바 (활성) | `#A78BFA` | 완료된 사이클 |
+
+  | 진행 바 (비활성) | `#E5E7EB` | 미완료 사이클 |
+
+  | CTA 버튼 | `#7C3AED` | 주요 행동 버튼 |
+
+  | 완료 화면 배경 | `#FEF3C7` | 따뜻한 골든 완료 상태 |
+
+
+## 5. 타이포그래피
+
+
+  | 요소 | 폰트 | 크기 | 굵기 | 색상 |
+
+  | 화면 타이틀 | Noto Sans KR | 18px | 700 | #111111 |
+
+  | 상태 안내 텍스트 | Noto Sans KR | 22px | 600 | #5B21B6 |
+
+  | 타이머 카운트 | Noto Sans KR / SF Pro Display | 48px | 700 | #7C3AED |
+
+  | 서브 텍스트 | Noto Sans KR | 14px | 400 | #6B7280 |
+
+  | 버튼 레이블 | Noto Sans KR | 16px | 700 | #FFFFFF |
+
+  | 완료 멘트 | Noto Sans KR | 18px | 600 | #5B21B6 |
+
+
+## 6. 인터랙션 스펙 (Figma 프로토타입)
+
+
+  | 트리거 | 동작 | 애니메이션 | 시간 |
+
+  | "시작" 버튼 탭 | Idle → Inhale 전환 | Smart Animate / Ease Out | 0.6s |
+
+  | 들숨 카운트 종료 | Inhale → Hold-in 자동 전환 | Linear | 0.3s |
+
+  | 참기 카운트 종료 | Hold-in → Exhale 자동 전환 | Smart Animate / Ease In-Out | 0.6s |
+
+  | 날숨 카운트 종료 | Exhale → Hold-out 자동 전환 | Linear | 0.3s |
+
+  | 사이클 4회 완료 | Hold-out → Complete 전환 | Smart Animate + 파티클 오버레이 | 1.0s |
+
+  | "홈으로" 버튼 탭 | Complete → 홈 화면 이동 | Push / Left | 0.4s |
+
+  | "일시정지" 버튼 탭 | 현재 상태 → Pause 오버레이 | Dissolve | 0.3s |
+
+
+### 호흡 원형 애니메이션 상세
+
+
+  - **들숨 4초**: 지름 160px → 240px, Ease In-Out, 4000ms
+  - **날숨 4초**: 지름 240px → 160px, Ease In-Out, 4000ms
+  - **멈춤 상태**: 크기 유지 + 미세 펄스 (±4px, 1s 주기, Ease In-Out)
+  - **완료 효과**: 원형 160px → 320px 확장 후 페이드아웃, 1.5s
+
+
+## 7. 베니 캐릭터 연동 스펙
+
+
+  | 호흡 상태 | 사용 스프라이트 | 스케일 | 비고 |
+
+  | 대기 (Idle) | 감정: 평온 / 강도: 2 (차분) | 1.0x | 기본 대기 상태 |
+
+  | 들숨 (Inhale) | 감정: 기쁨 / 강도: 3 | 1.0→1.1x 4초 | 살짝 밝아지는 표정 |
+
+  | 들숨 멈춤 (Hold-in) | 감정: 평온 / 강도: 4 (집중) | 1.1x 유지 | 집중된 표정 |
+
+  | 날숨 (Exhale) | 감정: 평온 / 강도: 2 | 1.1→0.95x 4초 | 이완되는 표정 |
+
+  | 날숨 멈춤 (Hold-out) | 감정: 평온 / 강도: 1 (완전 이완) | 0.95x 유지 | 완전히 편안한 상태 |
+
+  | 완료 | 감정: 기쁨 / 강도: 5 (최고조) | 1.0x + 파티클 | 축하 표정 + 파티클 효과 |
+
+
+**
+  참고**: 베니 단계는 사용자의 현재 성장 단계(1~5단계)를 반영합니다. 각 단계별 스프라이트는 33번~(베니 3~5단계 스펙 문서)에 정의됩니다.
+
+
+## 8. 사운드 연동 (디자이너 참고용)
+
+
+  | 이벤트 | 사운드 에셋명 | 길이 | 비고 |
+
+  | 들숨 시작 | `sfx_breathe_in.mp3` | 4초 | 잔잔한 바람 소리 |
+
+  | 날숨 시작 | `sfx_breathe_out.mp3` | 4초 | 부드러운 날숨 소리 |
+
+  | 완료 알림 | `sfx_complete_chime.mp3` | 2초 | 차임 효과음 |
+
+  | 배경 BGM | `bgm_breathing_ambient.mp3` | 루프 | 자연 소리 앰비언트 |
+
+
+## 9. 접근성 (Accessibility)
+
+
+  - 모든 텍스트 명도 대비 WCAG AA 이상 (4.5:1)
+  - VoiceOver 레이블: 호흡 원형 "현재 단계: 들숨 3초 남음"
+  - 줄이기 모션 설정 시: 원형 크기 애니메이션 대신 색상 변화로 대체
+  - 텍스트 크기 최소 14px, 버튼 터치 영역 최소 44×44px
+
+
+## 10. 납품 체크리스트
+
+
+  | 항목 | 확인 |
+
+  | Figma 파일에 모든 6개 상태 프레임 포함 | ☑ |
+
+  | 인터랙티브 프로토타입 연결 완료 (시작→완료 전체 흐름) | ☑ |
+
+  | PNG 5장 (대기/들숨/날숨/멈춤/완료) 1x + 2x 각각 내보내기 | ☑ |
+
+  | 색상 팔레트 Figma Styles에 등록 | ☑ |
+
+  | 컴포넌트 라이브러리 구성 (호흡 원형, 타이머, 버튼) | ☑ |
+
+  | 개발팀 핸드오프 노트 작성 (수치 주석) | ☑ |
+
+  | Figma 공유 링크 PM에게 전달 | ☑ |
+
+
+## 11. 개발팀 핸드오프 참고
+
+
+  **Unity 구현 담당자 참고사항:**
+  - 호흡 원형: Unity UI → Image 컴포넌트, RectTransform Scale 애니메이션 (Animator 기반)
+  - 베니 스프라이트: SpriteRenderer → Animator Controller에서 호흡 단계 파라미터로 전환
+  - 타이머: Coroutine 기반 카운트다운, TextMeshPro 표시
+  - 사운드: AudioSource × 2 (BGM + SFX) 분리 채널 사용
+  - 진행 바: Slider 컴포넌트, value = completedCycles / totalCycles(4)
