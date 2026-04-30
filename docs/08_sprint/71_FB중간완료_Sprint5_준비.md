@@ -85,11 +85,11 @@ updated: 2026-04-29
  
  
  FB-11 
- Benny_S5 Emission Intensity HDR 1.0 → 0.3 적용 
+ Benny_S5 Highlight Intensity HDR 1.0 → 0.3 적용 
  4/30 
  
  
- **반영 내용:** Benny_S5.mat → Inspector → Emission Intensity 슬라이더 0.3으로 조정. 스크린샷 QA팀 공유 (64번 기준) 
+ **반영 내용:** Benny_S5.mat → Inspector → Highlight Intensity 슬라이더 0.3으로 조정. 스크린샷 QA팀 공유 (64번 기준) 
  **담당:** 아트팀 
  **검증:** Galaxy S21 Ultra 실기에서 과도하지 않은 라벤더 발광 확인 
  
@@ -256,7 +256,7 @@ updated: 2026-04-29
  
 - cloud_soft.png 제작 착수 (60번 명세 기준)
  
-- FB-11 Benny_S5 Emission 0.3 적용
+- FB-11 Benny_S5 Highlight 0.3 적용
  
  
 
@@ -319,7 +319,7 @@ updated: 2026-04-29
 
  | FB-10 | BennyTree Prefab 초기화 | 4/30 | 오늘 | 4/30 코드 반영 |
 
- | FB-11 | Emission 0.3 | 4/30 | 오늘 | 4/30 아트 적용 |
+ | FB-11 | Highlight 0.3 | 4/30 | 오늘 | 4/30 아트 적용 |
 
  | FB-14 | Day 13 타이머 설계 | 4/30 | 오늘 | Sprint 5 5/3~4 |
 

@@ -5,6 +5,8 @@ updated: 2026-04-15
 portal: https://lrndxihi.gensparkclaw.com/benny/37_BreathingGuide_UI_디자인스펙.html
 ---
 
+> **2D 제작 기준 업데이트:** 본 문서의 캐릭터/오브젝트/씬 산출물은 정식 이미지 제작 단계에서 3D가 아닌 2D PNG/SVG 스프라이트와 UI 이미지 기준으로 작업합니다. 상세 통합 지침은 [79_디자인가이드_작업지시서](./79_디자인가이드_작업지시서.md)를 따릅니다.
+
 BreathingGuide UI 디자인 스펙 — 소울나루
 
 

@@ -182,10 +182,10 @@ namespace SoulNaru.Art
         public static BennySeasonManager Instance { get; private set; }
 
         [Header("Season Textures")]
-        [SerializeField] private Texture2D springAlbedo;   // Tree_Spring_Albedo
-        [SerializeField] private Texture2D summerAlbedo;   // Tree_Summer_Albedo
-        [SerializeField] private Texture2D autumnAlbedo;   // Tree_Autumn_Albedo
-        [SerializeField] private Texture2D winterAlbedo;   // Tree_Winter_Albedo
+        [SerializeField] private Texture2D springBaseColor;   // Tree_Spring_BaseColor
+        [SerializeField] private Texture2D summerBaseColor;   // Tree_Summer_BaseColor
+        [SerializeField] private Texture2D autumnBaseColor;   // Tree_Autumn_BaseColor
+        [SerializeField] private Texture2D winterBaseColor;   // Tree_Winter_BaseColor
 
         [Header("Tree Accessory GameObjects")]
         [SerializeField] private GameObject springDecor;
@@ -224,13 +224,13 @@ namespace SoulNaru.Art
             var prev = _currentSeason;
             _currentSeason = season;
 
-            // 텍스처 교체
+            // 이미지 레이어 교체
             var tex = season switch {
-                Season.Spring => springAlbedo,
-                Season.Summer => summerAlbedo,
-                Season.Autumn => autumnAlbedo,
-                Season.Winter => winterAlbedo,
-                _ => springAlbedo
+                Season.Spring => springBaseColor,
+                Season.Summer => summerBaseColor,
+                Season.Autumn => autumnBaseColor,
+                Season.Winter => winterBaseColor,
+                _ => springBaseColor
             };
             if (_treeRenderer != null)
                 _treeRenderer.material.SetTexture("_MainTex", tex);

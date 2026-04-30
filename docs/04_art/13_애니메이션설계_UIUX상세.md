@@ -5,6 +5,8 @@ updated: 2026-04-02
 portal: https://lrndxihi.gensparkclaw.com/benny/13_애니메이션설계_UIUX상세.html
 ---
 
+> **2D 제작 기준 업데이트:** 본 문서의 캐릭터/오브젝트/씬 산출물은 정식 이미지 제작 단계에서 3D가 아닌 2D PNG/SVG 스프라이트와 UI 이미지 기준으로 작업합니다. 상세 통합 지침은 [79_디자인가이드_작업지시서](./79_디자인가이드_작업지시서.md)를 따릅니다.
+
 애니메이션 설계서 + UI/UX 상세 설계 — 베니와 함께 — 베니와 함께
 
 
@@ -25,7 +27,7 @@ portal: https://lrndxihi.gensparkclaw.com/benny/13_애니메이션설계_UIUX상
   ② 스프라이트 기반 감정 애니메이션 연동 방식**:**
   감정 체크인 시 베니 표정 변화는 2D 스프라이트 전환** 방식으로 구현합니다.
   `benny_s{stage}_{emotion}_{intensity}.png` → `SpriteRenderer.sprite` 교체 → DOTween 0.3s fade.
-  3D Animator는 신체 모션(꼬리 흔들기, 점프 등)만 담당하고, 표정은 스프라이트 레이어로 분리합니다.**
+  2D Animator는 신체 모션(꼬리 흔들기, 점프 등)만 담당하고, 표정은 스프라이트 레이어로 분리합니다.**
   ③ 구현 우선순위 (Sprint 2 → 3)**:
 
     - 🔴 Sprint 2 (4/14~4/20): `ANIM_Checkin_Joy`, `ANIM_Checkin_Sad`, `ANIM_Grow_Stage`
@@ -482,13 +484,13 @@ portal: https://lrndxihi.gensparkclaw.com/benny/13_애니메이션설계_UIUX상
 | **모션 감소** | 애니메이션 줄이기 설정 지원 (iOS Reduce Motion) |
 
 
-## 8. 베니 성장 단계별 모델 교체 방식
+## 8. 베니 성장 단계별 이미지 교체 방식
 
 
 ### 8.1 교체 방식 결정: Animator Override Controller 채택
 
 
-베니가 성장 단계(1→2→3→4→5단계)에 따라 3D 모델이 교체될 때, 애니메이션 상태 머신을 유지하면서 클립만 교환하는 **Animator Override Controller** 방식을 사용한다.
+베니가 성장 단계(1→2→3→4→5단계)에 따라 2D 이미지이 교체될 때, 애니메이션 상태 머신을 유지하면서 클립만 교환하는 **Animator Override Controller** 방식을 사용한다.
 
 **선택 이유**:
 
@@ -546,7 +548,7 @@ public void UpdateBennyStage(int newStage)
     AnimatorOverrideController overrideController = _stageControllers[newStage - 1];
     _animator.runtimeAnimatorController = overrideController;
 
-    // 3D 모델 Prefab 교체
+    // 2D 이미지 Prefab 교체
     Destroy(_currentBennyModel);
     _currentBennyModel = Instantiate(_bennyModelPrefabs[newStage - 1], transform);
 
@@ -570,12 +572,12 @@ public void UpdateBennyStage(int newStage)
 
 | **이전 상태 복원** | 교체 전 Idle 상태로 강제 전환 후 Override 적용 |
 
-| **메모리 관리** | 이전 단계 모델 Prefab 즉시 `Destroy()` |
+| **메모리 관리** | 이전 단계 이미지 Prefab 즉시 `Destroy()` |
 
 | **교체 중 탭 방지** | 교체 진행 중 `_isBennyTransitioning = true` 플래그로 입력 차단 |
 
 
 문서 버전: v1.3 | 수정일: 2026-04-04 | 작성: AI PM Alex | 검토: 아트팀
-(v1.1 변경: 섹션 8 베니 성장 단계별 모델 교체 방식 추가 — Animator Override Controller 채택)
+(v1.1 변경: 섹션 8 베니 성장 단계별 이미지 교체 방식 추가 — Animator Override Controller 채택)
 (v1.2 변경: 섹션 4.5 설정 화면에 점심 알림 추가 / 섹션 4.6→4.7 상점 화면 와이어프레임 신규 추가)
 (v1.3 변경: 섹션 4.6 호흡 가이드 전용 화면 UX 신규 추가 — 박스호흡/4-7-8 패턴, VARCO Sound 연동, 베니 애니 연동)

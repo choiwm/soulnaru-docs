@@ -28,7 +28,7 @@ portal: https://lrndxihi.gensparkclaw.com/benny/51_Sprint3_완료보고서.html
 
   🎉 Sprint 3 핵심 목표 달성
   앨범 씬 기본 구조 및 미션 시스템 Day 1~14 전체 구현 완료. BennySeasonManager·BennyDialogue 연동 완료.
-  Sprint 2에서 이월된 FBX/Prefab 블로커는 Sprint 3 기간 내 해소. 파티클 4종은 Sprint 4로 이월.
+  Sprint 2에서 이월된 PNG 스프라이트/Prefab 블로커는 Sprint 3 기간 내 해소. 파티클 4종은 Sprint 4로 이월.
 
 
 ## 1. Sprint 3 목표 vs 달성
@@ -40,7 +40,7 @@ portal: https://lrndxihi.gensparkclaw.com/benny/51_Sprint3_완료보고서.html
 
   | 주 목표 | 미션 시스템 Day 1~14 전체 | ✅ MissionManager + Day 8~14 ACT 콘텐츠 완성 |
 
-  | 이월 해소 | FBX 3~5단계 납품 (S2→S3) | ✅ 4/22 전체 납품 완료 |
+  | 이월 해소 | PNG 스프라이트 3~5단계 납품 (S2→S3) | ✅ 4/22 전체 납품 완료 |
 
   | 이월 해소 | Prefab 3단계 Bloom | ✅ 4/23 완성 |
 
@@ -69,7 +69,7 @@ portal: https://lrndxihi.gensparkclaw.com/benny/51_Sprint3_완료보고서.html
 
   | 완료 항목 | 완료일 | 비고 |
 
-  | BennySeasonManager.cs 최종 구현 | 4/21 | 계절 4종 텍스처·파티클 연동 완료 |
+  | BennySeasonManager.cs 최종 구현 | 4/21 | 계절 4종 이미지 레이어·파티클 연동 완료 |
 
   | BennyDialogue Firestore 컬렉션 연동 | 4/22 | dialogueType·emotionId·bennyStage 저장 |
 
@@ -87,11 +87,11 @@ portal: https://lrndxihi.gensparkclaw.com/benny/51_Sprint3_완료보고서.html
 
   | 완료 항목 | 완료일 | 비고 |
 
-  | FBX 3단계 Benny_Stage3_Bloom.fbx | 4/22 | LOD0: 987폴리 (≤1,000 ✅) |
+  | PNG 스프라이트 3단계 Benny_Stage3_Bloom.fbx | 4/22 | 해상도 단계0: 987폴리 (≤1,000 ✅) |
 
-  | FBX 4단계 Benny_Stage4_Fruit.fbx | 4/22 | LOD0: 994폴리 |
+  | PNG 스프라이트 4단계 Benny_Stage4_Fruit.fbx | 4/22 | 해상도 단계0: 994폴리 |
 
-  | FBX 5단계 Benny_Stage5_Tree.fbx × 4계절 | 4/22 | 봄/여름/가을/겨울 계절 변형 포함 |
+  | PNG 스프라이트 5단계 Benny_Stage5_Tree.fbx × 4계절 | 4/22 | 봄/여름/가을/겨울 계절 변형 포함 |
 
   | Prefab — BennyBloom.prefab | 4/23 | 3단계 완성 |
 

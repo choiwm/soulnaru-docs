@@ -28,7 +28,7 @@ portal: https://lrndxihi.gensparkclaw.com/benny/10_API명세서_기술사양서.
 
 | 백엔드 | Firebase (Firestore + Auth + Functions) |
 
-| AI API | NC AI VARCO 3D / Sound |
+| AI API | NC AI 2D 이미지 제작 / Sound |
 
 | 결제 | Unity IAP (Google Play + App Store) |
 
@@ -242,7 +242,7 @@ POST /auth/register**
 ## 3. VARCO AI API 연동 명세
 
 
-### 3.1 VARCO 3D (에셋 생성)
+### 3.1 2D 이미지 제작 (에셋 생성)
 
 
 ```

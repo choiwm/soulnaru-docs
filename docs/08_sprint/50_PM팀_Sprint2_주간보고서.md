@@ -24,7 +24,7 @@ portal: https://lrndxihi.gensparkclaw.com/benny/50_PM팀_Sprint2_주간보고서
 
     🎨 아트팀
     70%
-    에셋 v2 완료 (114종) · FBX 진행중 (마감 4/20)
+    에셋 v2 완료 (114종) · PNG 스프라이트 진행중 (마감 4/20)
 
 
     💻 개발팀
@@ -56,9 +56,9 @@ portal: https://lrndxihi.gensparkclaw.com/benny/50_PM팀_Sprint2_주간보고서
 
   | 개발 | BennySeasonManager.cs 구현 | 4/20 | 진행중 | 47번 명세 |
 
-  | 아트 | FBX 3단계 모델 납품 | 4/20 | 진행중 | 48번 추적 |
+  | 아트 | PNG 스프라이트 3단계 이미지 납품 | 4/20 | 진행중 | 48번 추적 |
 
-  | 아트 | 파티클 PS_CherryBlossom 등 4종 | 4/20 | 미착수 | FBX 이후 |
+  | 아트 | 파티클 PS_CherryBlossom 등 4종 | 4/20 | 미착수 | PNG 스프라이트 이후 |
 
   | 기획 | Day 8~14 ACT 미션 시나리오 | 4/20 | 진행중 | 49번 |
 
@@ -76,7 +76,7 @@ portal: https://lrndxihi.gensparkclaw.com/benny/50_PM팀_Sprint2_주간보고서
 
   | ID | 리스크 | 영향 | 가능성 | 대응 방안 | 오너 |
 
-  | R-01 | FBX 납품 4/20 지연 | 높음 — Prefab·개발 연쇄 지연 | 중간 | 4/18 1차 납품 요청, 임시 큐브 메시로 개발 선행 | 아트팀 리드 |
+  | R-01 | PNG 스프라이트 납품 4/20 지연 | 높음 — Prefab·개발 연쇄 지연 | 중간 | 4/18 1차 납품 요청, 임시 큐브 메시로 개발 선행 | 아트팀 리드 |
 
   | R-02 | FCM 알림 Apple 심사 통과 | 높음 — 1393 버튼 리젝 리스크 | 중간 | FCM-05 4/17 테스트, Apple 가이드라인 사전 검토 | QA 리드 |
 
@@ -88,7 +88,7 @@ portal: https://lrndxihi.gensparkclaw.com/benny/50_PM팀_Sprint2_주간보고서
 
   - ✅ 팀간 크로스체크 토론 (43번) — 18개 이슈 도출
   - ✅ 10개 문서 개선 적용 (44번) — 모든 긴급 이슈 해소
-  - ✅ 에셋 v2 전면 재생성 (45번) — 114종 (UI·스프라이트·텍스처)
+  - ✅ 에셋 v2 전면 재생성 (45번) — 114종 (UI·스프라이트·이미지 레이어)
   - ✅ 팀별 Sprint 2 전문 문서 작성 (46~50번)
   - ✅ index.html 갤러리 분리 — 각 팀 문서에 이미지 이동
 
@@ -102,7 +102,7 @@ portal: https://lrndxihi.gensparkclaw.com/benny/50_PM팀_Sprint2_주간보고서
 
   | 4/17 | FCM-05 1393 전화 연결 테스트 | QA |
 
-  | 4/18 | FBX 1차 납품 (3단계 Bloom) | 아트 B |
+  | 4/18 | PNG 스프라이트 1차 납품 (3단계 Bloom) | 아트 B |
 
   | 4/18 | VoiceOver accessibilityLabel iOS 구현 | 개발 C |
 
@@ -112,7 +112,7 @@ portal: https://lrndxihi.gensparkclaw.com/benny/50_PM팀_Sprint2_주간보고서
 
   | 4/20 | Sprint 2 전체 완료 기준 검토 + Sprint 3 킥오프 준비 | PM |
 
-  | 4/20 | FBX 전체 납품 (3~5단계) | 아트 B |
+  | 4/20 | PNG 스프라이트 전체 납품 (3~5단계) | 아트 B |
 
   | 4/21 | Sprint 2 완료 보고서 + Sprint 3 플래닝 | 전체 |
 

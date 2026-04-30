@@ -90,8 +90,8 @@ portal: https://lrndxihi.gensparkclaw.com/benny/52_Sprint4_플래닝문서.html
     👤 아티스트 E📅 4/28~29⏱ 2일
 
 
-    - PS_Firefly (여름): 반딧불이, 발광 텍스처, 30개 파티클
-    - PS_FallenLeaf (가을): Tree_Autumn_Albedo 기반 낙엽, 40개
+    - PS_Firefly (여름): 반딧불이, 발광 이미지 레이어, 30개 파티클
+    - PS_FallenLeaf (가을): Tree_Autumn_BaseColor 기반 낙엽, 40개
     - PS_Snow (겨울): 흰색 스프라이트, 80개, 중력 설정
     - BennySeasonManager.OnSeasonChange → 파티클 전환 연동
 
