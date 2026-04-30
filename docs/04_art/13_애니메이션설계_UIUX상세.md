@@ -5,7 +5,7 @@ updated: 2026-04-02
 portal: https://lrndxihi.gensparkclaw.com/benny/13_애니메이션설계_UIUX상세.html
 ---
 
-> **2D 제작 기준 업데이트:** 본 문서의 캐릭터/오브젝트/씬 산출물은 정식 이미지 제작 단계에서 3D가 아닌 2D PNG/SVG 스프라이트와 UI 이미지 기준으로 작업합니다. 상세 통합 지침은 [79_디자인가이드_작업지시서](./79_디자인가이드_작업지시서.md)를 따릅니다.
+> **2D 제작 기준 업데이트:** 본 문서의 캐릭터/오브젝트/씬 산출물은 정식 이미지 제작 단계에서 2D가 아닌 2D PNG/SVG 스프라이트와 UI 이미지 기준으로 작업합니다. 상세 통합 지침은 [79_디자인가이드_작업지시서](./79_디자인가이드_작업지시서.md)를 따릅니다.
 
 애니메이션 설계서 + UI/UX 상세 설계 — 베니와 함께 — 베니와 함께
 
@@ -548,9 +548,9 @@ public void UpdateBennyStage(int newStage)
     AnimatorOverrideController overrideController = _stageControllers[newStage - 1];
     _animator.runtimeAnimatorController = overrideController;
 
-    // 2D 이미지 Prefab 교체
+    // 2D 이미지 UI UI 프리팹 교체
     Destroy(_currentBennyModel);
-    _currentBennyModel = Instantiate(_bennyModelPrefabs[newStage - 1], transform);
+    _currentBennyModel = Instantiate(_bennyModelUI UI 프리팹s[newStage - 1], transform);
 
     // 성장 애니메이션 트리거
     _animator.SetTrigger("GrowStage");
@@ -558,7 +558,7 @@ public void UpdateBennyStage(int newStage)
 
 // Inspector에서 ScriptableObject로 단계별 리소스 참조
 [SerializeField] private AnimatorOverrideController[] _stageControllers; // 5개
-[SerializeField] private GameObject[] _bennyModelPrefabs;               // 5개
+[SerializeField] private GameObject[] _bennyModelUI UI 프리팹s;               // 5개
 `
 ```
 
@@ -572,7 +572,7 @@ public void UpdateBennyStage(int newStage)
 
 | **이전 상태 복원** | 교체 전 Idle 상태로 강제 전환 후 Override 적용 |
 
-| **메모리 관리** | 이전 단계 이미지 Prefab 즉시 `Destroy()` |
+| **메모리 관리** | 이전 단계 이미지 UI UI 프리팹 즉시 `Destroy()` |
 
 | **교체 중 탭 방지** | 교체 진행 중 `_isBennyTransitioning = true` 플래그로 입력 차단 |
 

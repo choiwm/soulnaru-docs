@@ -28,7 +28,7 @@ portal: https://lrndxihi.gensparkclaw.com/benny/51_Sprint3_완료보고서.html
 
   🎉 Sprint 3 핵심 목표 달성
   앨범 씬 기본 구조 및 미션 시스템 Day 1~14 전체 구현 완료. BennySeasonManager·BennyDialogue 연동 완료.
-  Sprint 2에서 이월된 PNG 스프라이트/Prefab 블로커는 Sprint 3 기간 내 해소. 파티클 4종은 Sprint 4로 이월.
+  Sprint 2에서 이월된 PNG 스프라이트/UI UI 프리팹 블로커는 Sprint 3 기간 내 해소. 파티클 4종은 Sprint 4로 이월.
 
 
 ## 1. Sprint 3 목표 vs 달성
@@ -42,9 +42,9 @@ portal: https://lrndxihi.gensparkclaw.com/benny/51_Sprint3_완료보고서.html
 
   | 이월 해소 | PNG 스프라이트 3~5단계 납품 (S2→S3) | ✅ 4/22 전체 납품 완료 |
 
-  | 이월 해소 | Prefab 3단계 Bloom | ✅ 4/23 완성 |
+  | 이월 해소 | UI UI 프리팹 3단계 Bloom | ✅ 4/23 완성 |
 
-  | 이월 해소 | Prefab 4/5단계 Fruit·Tree | ✅ 4/24 완성, BennySeasonManager 연결 |
+  | 이월 해소 | UI UI 프리팹 4/5단계 Fruit·Tree | ✅ 4/24 완성, BennySeasonManager 연결 |
 
   | 이월 해소 | QA-F01 백그라운드 Step 유지 | ✅ 4/21 수정 완료, QA 검증 통과 |
 
@@ -93,11 +93,11 @@ portal: https://lrndxihi.gensparkclaw.com/benny/51_Sprint3_완료보고서.html
 
   | PNG 스프라이트 5단계 Benny_Stage5_Tree.fbx × 4계절 | 4/22 | 봄/여름/가을/겨울 계절 변형 포함 |
 
-  | Prefab — BennyBloom.prefab | 4/23 | 3단계 완성 |
+  | UI UI 프리팹 — BennyBloom.prefab | 4/23 | 3단계 완성 |
 
-  | Prefab — BennyFruit.prefab | 4/24 | 4단계, 열매 흔들림 애니메이션 포함 |
+  | UI UI 프리팹 — BennyFruit.prefab | 4/24 | 4단계, 열매 흔들림 애니메이션 포함 |
 
-  | Prefab — BennyTree.prefab (×4) | 4/24 | 5단계 계절별 Prefab, BennySeasonManager 연결 |
+  | UI UI 프리팹 — BennyTree.prefab (×4) | 4/24 | 5단계 계절별 UI UI 프리팹, BennySeasonManager 연결 |
 
   | 파티클 PS_CherryBlossom | 4/26 | 봄 파티클 완성, 최대 50개 파티클 |
 

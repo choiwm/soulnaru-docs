@@ -87,7 +87,7 @@
 | Unity 씬 | Boot / Onboarding / MainHome / Garden / Album / Store / Settings / BreathingGuide | 8개 |
 | C# 스크립트 | GameManager, EmotionManager, BennyController, VARCOService 등 | 12개+ |
 | Firestore 컬렉션 | users, emotions, BennyDialogue | 3개 |
-| UI 프리팹 | 체크인 패널, 말풍선, 탭바, HUD | 8개 |
+| UI UI 프리팹 | 체크인 패널, 말풍선, 탭바, HUD | 8개 |
 | 테스트 케이스 | 단위 테스트 | 24개 |
 
 ---

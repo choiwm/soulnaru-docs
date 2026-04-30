@@ -110,7 +110,7 @@ portal: https://lrndxihi.gensparkclaw.com/benny/07_Unity아키텍처설계서.ht
 │   │   └── Utils/               # 유틸리티
 │   │       ├── LocalStorage.cs
 │   │       └── Logger.cs
-│   ├── Prefabs/
+│   ├── UI UI 프리팹s/
 │   │   ├── Benny/
 │   │   ├── Garden/
 │   │   ├── UI/
@@ -190,7 +190,7 @@ portal: https://lrndxihi.gensparkclaw.com/benny/07_Unity아키텍처설계서.ht
 
 | 씬 | PascalCase.unity | `MainHome.unity` |
 
-| 프리팹 | PFB_PascalCase | `PFB_BennySprout` |
+| UI 프리팹 | PFB_PascalCase | `PFB_BennySprout` |
 
 | 스프라이트 | SPR_Name_State | `SPR_Benny_Happy` |
 

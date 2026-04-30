@@ -1,5 +1,5 @@
 
-> **2D 제작 기준 업데이트:** 본 문서의 캐릭터/오브젝트/씬 산출물은 정식 이미지 제작 단계에서 3D가 아닌 2D PNG/SVG 스프라이트와 UI 이미지 기준으로 작업합니다. 상세 통합 지침은 [79_디자인가이드_작업지시서](./79_디자인가이드_작업지시서.md)를 따릅니다.
+> **2D 제작 기준 업데이트:** 본 문서의 캐릭터/오브젝트/씬 산출물은 정식 이미지 제작 단계에서 2D가 아닌 2D PNG/SVG 스프라이트와 UI 이미지 기준으로 작업합니다. 상세 통합 지침은 [79_디자인가이드_작업지시서](./79_디자인가이드_작업지시서.md)를 따릅니다.
 
 # 🎨 아트팀 Sprint 1 이미지 제작 완료보고
 
@@ -16,7 +16,7 @@
 | **완료된 이미지** | 15/15 |
 | **완성도** | 100% |
 | **제작 기간** | 7일 (예정 4/14 → 실제 4/13 완료) |
-| **납품 파일** | 45+ (이미지, 이미지 레이어, Prefab, 스크립트) |
+| **납품 파일** | 45+ (이미지, 이미지 레이어, UI UI 프리팹, 스크립트) |
 | **총 파일 크기** | 39.5MB |
 
 ---
@@ -29,7 +29,7 @@
 - **납품 파일:**
   - `Plants/Mint_Plant.fbx`
   - `Textures/Mint_Plant_Diffuse.png` + Shadow
-  - `Prefabs/Mint_Plant.prefab`
+  - `UI UI 프리팹s/Mint_Plant.prefab`
   - Collider + Material 설정 완료
 - **특징:** 2D 이미지 제작 생성 + 아트팀 리터칭
 
@@ -39,7 +39,7 @@
 - **납품 파일:**
   - `Plants/White_Flower.fbx`
   - 색상 변형 Material 3종 (노란색, 파란색, 흰색)
-  - `Prefabs/White_Flower.prefab`
+  - `UI UI 프리팹s/White_Flower.prefab`
   - 감정별 자동 색상 스크립트
 - **특징:** 감정별 색상 변형 지원
 
@@ -49,7 +49,7 @@
 - **납품 파일:**
   - `Plants/Purple_Flower_Tree.fbx`
   - #A78BFA (소울 바이올렛) 색상 매치
-  - `Prefabs/Purple_Flower_Tree.prefab`
+  - `UI UI 프리팹s/Purple_Flower_Tree.prefab`
   - 다양한 크기 변형 가능
 - **특징:** 고급형 이미지, VARCO 리터칭 완성
 
@@ -59,7 +59,7 @@
 - **납품 파일:**
   - `Plants/Yellow_Sunflower.fbx`
   - #FCD34D (따뜻한 노란색) 정확히 매치
-  - `Prefabs/Yellow_Sunflower.prefab`
+  - `UI UI 프리팹s/Yellow_Sunflower.prefab`
   - 기쁨 감정 연동 준비 완료
 - **특징:** 감정 표현 최적화
 
@@ -69,7 +69,7 @@
 - **납품 파일:**
   - `Plants/Pink_Carnation.fbx`
   - #FCA5A5 (블로섬 핑크) 색상
-  - `Prefabs/Pink_Carnation.prefab`
+  - `UI UI 프리팹s/Pink_Carnation.prefab`
 - **특징:** 심플 형태, 빠른 배치
 
 ### 6️⃣ 파란 수국
@@ -78,7 +78,7 @@
 - **납품 파일:**
   - `Plants/Blue_Hydrangea.fbx`
   - #93C5FD (하늘색) 정확히 매치
-  - `Prefabs/Blue_Hydrangea.prefab`
+  - `UI UI 프리팹s/Blue_Hydrangea.prefab`
   - 평온 감정 연동 설정
 - **특징:** 감정 연동 최적화
 
@@ -98,7 +98,7 @@
 - **납품 파일:**
   - `Decorations/Wooden_Bench.fbx`
   - 목재 무드 이미지 레이어
-  - `Prefabs/Wooden_Bench.prefab`
+  - `UI UI 프리팹s/Wooden_Bench.prefab`
   - 그림자 맵 포함
 
 ### 8️⃣ 분수
@@ -107,7 +107,7 @@
 - **납품 파일:**
   - `Decorations/Fountain.fbx` (고급형)
   - VARCO 생성 + 아트팀 고급 리터칭
-  - `Prefabs/Fountain.prefab`
+  - `UI UI 프리팹s/Fountain.prefab`
   - 파티클 시스템 연동 설정
   - 물 흐름 애니메이션 준비 완료
 - **특징:** 복잡한 형태, 파티클 연동
@@ -118,7 +118,7 @@
 - **납품 파일:**
   - `Decorations/Wooden_Fence_Segment.fbx` (반복 세그먼트)
   - 목재 이미지 레이어 + 색상 변형
-  - `Prefabs/Wooden_Fence.prefab` (배열형)
+  - `UI UI 프리팹s/Wooden_Fence.prefab` (배열형)
   - 드래그&드롭 최적화 완료
 - **특징:** 반복 가능, 유연한 배치
 
@@ -128,7 +128,7 @@
 - **납품 파일:**
   - `Decorations/Lantern.fbx`
   - 따뜻한 색상 이미지 레이어
-  - `Prefabs/Lantern.prefab`
+  - `UI UI 프리팹s/Lantern.prefab`
   - 발광 이펙트 Material 포함
 - **특징:** 야간 효과 지원
 
@@ -138,7 +138,7 @@
 - **납품 파일:**
   - `Decorations/Stone_Path_Tile.fbx`
   - 석재 이미지 레이어
-  - `Prefabs/Stone_Path.prefab` (그리드 배치)
+  - `UI UI 프리팹s/Stone_Path.prefab` (그리드 배치)
   - 3가지 크기 변형
 - **특징:** 타일형, Grid 배치 최적화
 
@@ -198,7 +198,7 @@
 - **납품 파일:**
   - `BennyHouse/Benny_House.fbx` (고급형)
   - 베니 3단계 높이 맞춤 (160% 상대)
-  - `Prefabs/Benny_House.prefab` (자동 배치)
+  - `UI UI 프리팹s/Benny_House.prefab` (자동 배치)
   - 베니 위치 고정 설정 스크립트
   - 성장 이정표 애니메이션 준비 완료
   - 계절별 색상 변형 3종 (봄/여름, 가을, 겨울)
@@ -221,8 +221,8 @@
 | **이미지 레이어** | PNG (Diffuse) | 15 |
 | **이미지 레이어** | PNG (Shadow) | 15 |
 | **이미지 레이어** | PNG (Special) | 5 |
-| **Prefab** | Unity Prefab | 15 |
-| **Particle** | Particle Prefab | 3 |
+| **UI UI 프리팹** | Unity UI UI 프리팹 | 15 |
+| **Particle** | Particle UI UI 프리팹 | 3 |
 | **Material** | Unity Material | 18 |
 | **스크립트** | C# Script | 2 |
 | **문서** | PDF Guide | 1 |
@@ -234,7 +234,7 @@
 |------|------|
 | 이미지 (PNG 스프라이트) | 11.5 MB |
 | 이미지 레이어 (PNG) | 28 MB |
-| Prefab | 2.5 MB |
+| UI UI 프리팹 | 2.5 MB |
 | 스크립트 + 기타 | 0.5 MB |
 | **총합** | **42.5 MB** |
 
@@ -244,7 +244,7 @@
 
 - [x] 모든 이미지 2D 해상도 수 500~2000 범위 내 (성능 최적화 완료)
 - [x] 이미지 레이어 해상도 512×512px 통일 (메모리 효율성 확보)
-- [x] 모든 Prefab에 Collider 설정 (드래그&드롭 상호작용 지원)
+- [x] 모든 UI UI 프리팹에 Collider 설정 (드래그&드롭 상호작용 지원)
 - [x] Material 색상값 GDD 컬러 팔레트 정확히 매치
 - [x] 파티클 이펙트 프레임레이트 60fps 유지 확인
 - [x] 베이크드 라이트맵 모두 포함 (실시간 그림자 최소화)
@@ -259,7 +259,7 @@
 
 1. **Assets 폴더에 모든 파일 복사**
 2. **GardenObjectManager.cs를 GardenScene에 첨부**
-3. **Prefab들을 Garden 씬에 드래그앤드롭**
+3. **UI UI 프리팹들을 Garden 씬에 드래그앤드롭**
 4. **Grid 배치 시스템과 자동 연동** (스크립트 포함)
 
 ### 개발팀 Sprint 2 (4/14~4/20) 작업

@@ -72,11 +72,11 @@ updated: 2026-04-29
  
  
  FB-10 
- BennyTree.prefab 계절 Prefab active=false 초기화 
+ BennyTree.prefab 계절 UI UI 프리팹 active=false 초기화 
  4/30 
  
  
- **반영 내용:** BennySeasonManager.Start()에서 현재 계절 제외 `SetActive(false)` 처리. Inspector에서 4개 Sub-Prefab 모두 active=false로 변경 (61번 기준) 
+ **반영 내용:** BennySeasonManager.Start()에서 현재 계절 제외 `SetActive(false)` 처리. Inspector에서 4개 Sub-UI UI 프리팹 모두 active=false로 변경 (61번 기준) 
  **담당:** 개발 A 
  **검증:** 드로우콜 -3, 메모리 ~15MB 절감 확인 (Profiler) 
  
@@ -317,7 +317,7 @@ updated: 2026-04-29
 
  | FB-07 | 씬 전환 블랙 플래시 | 4/30 | 오늘 | 4/30 코드 반영 |
 
- | FB-10 | BennyTree Prefab 초기화 | 4/30 | 오늘 | 4/30 코드 반영 |
+ | FB-10 | BennyTree UI UI 프리팹 초기화 | 4/30 | 오늘 | 4/30 코드 반영 |
 
  | FB-11 | Highlight 0.3 | 4/30 | 오늘 | 4/30 아트 적용 |
 
