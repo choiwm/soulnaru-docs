@@ -1,0 +1,164 @@
+---
+source_html: 48_아트팀_Sprint2_진행추적보고서.html
+exported: 2026-05-01
+---
+
+# 48번 — 아트팀 Sprint 2 진행 추적 보고서 · 소울나루
+
+48번 — 아트팀 Sprint 2 진행 추적 보고서 · 소울나루 
+
+🎨 아트팀 Sprint 2 진행 추적 보고서
+
+문서번호: 48  |  버전: v1.0  |  Sprint 기간: 2026-04-14~20  |  작성: 아트팀 리드
+
+담당: 아티스트 A(UI) · B(2D 이미지) · C(스프라이트) · D(UI UI UI 프리팹) · E(파티클)
+
+114
+에셋 v2 완료
+
+3
+PNG 스프라이트 진행중
+
+5
+UI UI UI 프리팹 예정
+
+4
+파티클 미착수
+
+## 1. Sprint 2 아트 작업 현황
+
+| 에셋 | 담당 | 마감 | 상태 | 비고 |
+| --- | --- | --- | --- | --- |
+| 베니 3단계 PNG 스프라이트 실체 이미지 | 아티스트 B | 4/20 | 진행중 | 스펙: 39번 v1.3 (≤1,000폴리) |
+| 베니 4단계 PNG 스프라이트 실체 이미지 | 아티스트 B | 4/20 | 진행중 | 스펙: 40번 v1.3 |
+| 베니 5단계 PNG 스프라이트 실체 이미지 (기본+계절4종) | 아티스트 B | 4/20 | 진행중 | 스펙: 41번 v1.3 · 계절 변형 포함 |
+| BreathingGuide Figma 핸드오프 | 아티스트 A | 완료 | ✅ PNG 스펙 완료 | 37번 v1.3 (PNG 대체) |
+| CheckIn UI Figma 핸드오프 | 아티스트 A | 완료 | ✅ PNG 스펙 완료 | 38번 v1.3 |
+| 감정 스프라이트 75종 (v2) | 아티스트 C | 완료 | ✅ v2 배포됨 | 45번 보고서 |
+| 이미지 레이어 13종 (v2) | 아티스트 C | 완료 | ✅ v2 배포됨 | 45번 보고서 |
+| Unity UI UI UI 프리팹 — 3단계 Bloom | 아티스트 D | 4/17 | PNG 스프라이트 대기 | 아티스트 B PNG 스프라이트 수령 후 착수 |
+| Unity UI UI UI 프리팹 — 4단계 Fruit | 아티스트 D | 4/18 | PNG 스프라이트 대기 | |
+| Unity UI UI UI 프리팹 — 5단계 Tree | 아티스트 D | 4/18 | PNG 스프라이트 대기 | BennySeasonManager 연결 포함 |
+| 파티클 — PS_CherryBlossom (봄) | 아티스트 E | 4/20 | 미착수 | BennySeasonManager.OnSeasonChange 연동 |
+| 파티클 — PS_Firefly (여름) | 아티스트 E | 4/20 | 미착수 | |
+| 파티클 — PS_FallenLeaf (가을) | 아티스트 E | 4/20 | 미착수 | |
+| 파티클 — PS_Snow (겨울) | 아티스트 E | 4/20 | 미착수 | |
+
+## 2. 완료된 에셋 갤러리
+
+### 📱 UI 시안 — BreathingGuide v2 (5종)
+
+![idle](assets/ui/BreathingGuide_idle.png)
+대기
+
+![inhale](assets/ui/BreathingGuide_inhale.png)
+들숨
+
+![hold_in](assets/ui/BreathingGuide_hold_in.png)
+멈춤 #5B21B6
+
+![exhale](assets/ui/BreathingGuide_exhale.png)
+날숨
+
+![done](assets/ui/BreathingGuide_done.png)
+완료 🎉
+
+### 📱 UI 시안 — Check-In v2 (8종)
+
+![s1](assets/ui/CheckIn_step1_emotion.png)
+Step1 감정선택
+
+![joy](assets/ui/CheckIn_step2_joy.png)
+기쁨 강도
+
+![sad](assets/ui/CheckIn_step2_sad.png)
+슬픔 강도
+
+![angry](assets/ui/CheckIn_step2_angry.png)
+화남 강도
+
+![anxious](assets/ui/CheckIn_step2_anxious.png)
+불안 강도
+
+![calm](assets/ui/CheckIn_step2_calm.png)
+평온 강도
+
+![s3](assets/ui/CheckIn_step3_confirm.png)
+Step3 확인
+
+![done](assets/ui/CheckIn_complete.png)
+완료
+
+### 🐰 스프라이트 대표 샘플 — Stage 3/4/5 (각 5종)
+
+전체 75종. 감정별 강도 5단계. 단계별 액센트 컬러 장식 적용.
+
+![s3j5](assets/sprites/stage3/benny_s3_joy_05.png)
+S3 기쁨 Lv5
+
+![s3s3](assets/sprites/stage3/benny_s3_sad_03.png)
+S3 슬픔 Lv3
+
+![s4j5](assets/sprites/stage4/benny_s4_joy_05.png)
+S4 기쁨 Lv5
+
+![s4a5](assets/sprites/stage4/benny_s4_angry_05.png)
+S4 화남 Lv5
+
+![s5c5](assets/sprites/stage5/benny_s5_calm_05.png)
+S5 평온 Lv5
+
+### 🎨 이미지 레이어 샘플 (BaseColor × 3단계 + 계절 4종)
+
+![s3a](assets/textures/Benny_S3_BaseColor.png)
+S3 BaseColor
+
+![s4a](assets/textures/Benny_S4_BaseColor.png)
+S4 BaseColor
+
+![s5a](assets/textures/Benny_S5_BaseColor.png)
+S5 BaseColor
+
+![sp](assets/textures/Tree_Spring_BaseColor.png)
+🌸 봄
+
+![su](assets/textures/Tree_Summer_BaseColor.png)
+🌿 여름
+
+![au](assets/textures/Tree_Autumn_BaseColor.png)
+🍂 가을
+
+![wi](assets/textures/Tree_Winter_BaseColor.png)
+❄️ 겨울
+
+![s5e](assets/textures/Benny_S5_Highlight.png)
+S5 Highlight
+
+## 3. PNG 스프라이트 납품 스펙 요약 (아티스트 B 참조)
+
+| 단계 | 파일명 | 폴리 제한 (해상도 단계0) | 리그 | UV 채널 | 마감 |
+| --- | --- | --- | --- | --- | --- |
+| 3단계 개화 | Benny_Stage3_Bloom.fbx | ≤1,000 | Simple (머리·몸) | UV0 (BaseColor), UV1 (Lightmap) | 4/20 |
+| 4단계 열매 | Benny_Stage4_Fruit.fbx | ≤1,000 | Simple + 열매 흔들림 | UV0, UV1 | 4/20 |
+| 5단계 나무 | Benny_Stage5_Tree.fbx (×4 계절) | ≤1,000 | Simple + 가지 흔들림 | UV0, UV1 | 4/20 |
+
+해상도 단계1: 500폴리, 해상도 단계2: 200폴리 별도 납품. CX-02 수정 기준 적용.
+
+## 4. 파티클 작업 지침 (아티스트 E 참조)
+
+| 파티클 시스템 | 계절 | 최대 파티클 수 | 이미지 레이어 기반 | BennySeasonManager 트리거 |
+| --- | --- | --- | --- | --- |
+| PS_CherryBlossom | 봄 | 50개 | Tree_Spring_BaseColor.png | OnSeasonChange → Spring |
+| PS_Firefly | 여름 | 30개 | 별도 발광 이미지 레이어 | OnSeasonChange → Summer |
+| PS_FallenLeaf | 가을 | 40개 | Tree_Autumn_BaseColor.png | OnSeasonChange → Autumn |
+| PS_Snow | 겨울 | 80개 | 흰색 스프라이트 | OnSeasonChange → Winter |
+
+⚠️ 주의: PNG 스프라이트 마감 4/20 미준수 시 영향
+
+UI UI UI 프리팹 조립(아티스트 D), Unity 임포트(개발팀) 일정이 연쇄 지연됩니다. Alpha 빌드(5/14) 리스크 상승.
+
+4/18까지 1단계 PNG 스프라이트 우선 납품 요청.
+
+📋 관련 문서
+
+[39번](39_베니3단계_개화_아트에셋스펙.html) · [40번](40_베니4단계_열매_아트에셋스펙.html) · [41번](41_베니5단계_나무_아트에셋스펙.html) · [45번 v2 보고서](45_아트에셋_v2_이미지개선보고서.html) · [47번 개발팀 명세](47_개발팀_Sprint2_구현명세서.html)
